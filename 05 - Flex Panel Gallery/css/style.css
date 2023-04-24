@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.box div {
+    flex: 1;
+    font: 30px '宋体';
+    color: #fff;
+    text-align: center;
+    transition: all .8s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box div>* {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.box h1 {
+    transition: all .8s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+}
+
+.box div span {
+    transition: all .3s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+}
+
+.top {
+    transform: translateY(-100%);
+}
+
+.bottom {
+    transform: translateY(100%);
+}
+
+div.active {
+    flex: 3;
+}
+
+div.active h1 {
+    font-size: 80px;
+}
+
+div.active_move span {
+    transform: translateY(0);
+}
