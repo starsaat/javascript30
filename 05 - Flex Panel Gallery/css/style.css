@@ -13,7 +13,6 @@
     flex: 1;
     font: 30px '宋体';
     color: #fff;
-    text-align: center;
     transition: all .8s cubic-bezier(0.61, -0.19, 0.7, -0.11);
     display: flex;
     flex-direction: column;
@@ -32,7 +31,7 @@
 }
 
 .box div span {
-    transition: all .3s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+    transition: all 1s cubic-bezier(0.61, -0.19, 0.7, -0.11);
 }
 
 .top {
@@ -40,7 +39,7 @@
 }
 
 .bottom {
-    transform: translateY(100%);
+    transform: translateY(100%); 
 }
 
 div.active {
@@ -48,9 +47,13 @@ div.active {
 }
 
 div.active h1 {
-    font-size: 80px;
+    font-size: 100px; 
 }
 
-div.active_move span {
+/* div.active_move span {
+    transform: translateY(0);
+} */
+
+div.active span {
     transform: translateY(0);
 }
